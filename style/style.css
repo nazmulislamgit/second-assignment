@@ -1,0 +1,419 @@
+/* Google Font style */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+/* <weight>: Use a value from 100 to 900 */
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+/* <weight>: Use a value from 400 to 700 */
+.dancing-script-font {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Google Font style End */
+.btn-p{
+    font-family: Inter;
+    background-color: #FD6E0A ;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    border: none;
+    padding: 18px 35px;
+    border-radius: 50px;
+}
+/* Header section */
+header{
+    /* max-width: 1440px;  */
+    /* margin: 0 auto; */
+}
+#header-section{
+    /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
+    /* background: rgba(119, 119, 119, 0.192); */
+    background: linear-gradient(120deg, rgba(107, 107, 107, 0.644), rgb(48, 47, 47) 100%);
+    /* padding: 0; */
+    
+}
+/* Nav */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 100px;    
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    margin-right: 20px; 
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+}
+.navbar-ul{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 8px 10px 8px 3px;
+}
+.nav-title{
+    font-family: Inter;
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+}
+.header-container{
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+.rightside-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    margin-top: 80px;
+    margin-left: 100px;
+}
+.list-menu-home{
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 4px;
+}
+.header-title{
+    font-family: Inter;
+    font-size: 4.875rem;
+    font-weight: 900;
+    color: white;
+}
+.header-description{
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    /* margin-top: 28px; */
+}
+
+.external-shape{
+    font-family: Miama;
+    font-size: 4.875rem;
+    font-weight: 400;
+    color: white;
+}
+.header-btn1{
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 16px 40px 16px 40px;
+    border: none;
+    color: white;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.header-btn2{
+    background: linear-gradient(130.00deg, rgba(17, 17, 17, 0.301),rgba(119, 119, 119, 0) 50%);
+    border: none;
+    border: 2px solid #fff;
+    border-radius: 42px;
+    color: white;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 16px 40px 16px 40px;
+    margin: 0 14px;
+    margin-bottom: 30px;
+}
+.leftside-container{
+    width: 50%;
+    display: flex;
+    /* justify-content: center; */
+    /* background-image: url(../images/Images2.png); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* align-items: center; */
+}
+/* .leftside-container img{
+    width: 100%;
+} */
+/* #title1{
+    background: rgb(34,34,34); 
+    background: rgba(34,34,34,0.75);
+    border-radius: 12px;
+    padding: 5px 20px 20px 5px;
+    margin-left: 400px;
+} */
+#title1{
+    position: absolute;
+    margin-left: -150px;
+    padding: 10px 10px;
+    /* background: rgb(34,34,34); */
+    background: rgba(34,34,34,0.75);
+    border-radius: 12px;
+    margin-top: 160px;
+    border: none;
+}
+#title-heading{
+    color: white;
+    font-family: Inter;
+    font-size: 2.1rem;
+    font-weight: 900;
+}
+#title-headings{
+    /* position: absolute; */
+    color: white;
+    font-family: Inter;
+    font-size: 1.9rem;
+    font-weight: 900;
+    text-align: left;
+}
+.free-workout{ 
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+}
+#title-second{
+    padding: 10px 15px;
+    background: rgb(34,34,34); 
+    background: rgba(34,34,34,0.75);
+    border-radius: 12px;
+    margin-left: -380px;
+    /* margin-right: -200px; */
+    margin-top: 470px;
+    border: none;
+}
+.video-tutorial{ 
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    text-align: left;
+}
+.fa-circle-play{
+    /* position: absolute; */
+    width: 40px;
+    height: 40px;
+    left: 787px;
+    top: 584px;
+    /* width: 100%; */
+}
+/* Main Section Style Here */
+.main-section{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.main-contant{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+.skills img{
+    border-radius: 200px;
+    width: 150px;
+}
+.change-habit{
+    display: flex;
+    /* margin: 70px; */
+    margin: 0 auto;
+    gap: 15px;
+}
+.skills{
+    padding: 15px;
+    text-align: center;
+}
+.skills img{
+    border: 3px solid #616161;
+}
+/* Run */
+.run-senction{
+    margin: 0 auto;
+    display: flex;
+}
+.run-container{
+    /* margin: 70px; */
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    background: #2c2c2c;
+    border-radius: 20px;
+}
+.run-content{
+    width: 50%;
+    margin-left: 20px;
+}
+.run-image{
+    width: 50%;
+}
+.run-image img{
+    border-radius: 30px;
+    width: 80%;
+    margin-left: 100px;
+}
+.run-content h3{
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+.run-content p{
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    color: #616161;
+    margin-top: -20px;
+}
+/* Training */
+.training-section{
+    margin: 0 auto;
+}
+.training-img{
+    display: flex;
+    margin: 50px;
+}
+.training-img img{
+    /* height: calc( (100% - 5px)/2 ); */
+}
+.trainig-content{
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    position: relative;
+    /* overflow: hidden; */
+}
+.exercise-first{
+    position: absolute;
+    width: 323px;
+    height: 218px;
+    left: -16px;
+    top: 0;
+}
+.trainier-name-he{
+    position: absolute;
+    top: 2px;
+    /* margin-bottom: 20px; */
+    left: 16px;
+    color: aqua;
+  }
+#img1{
+   /* width: 15%;  */
+   /* height: 7%; */
+   /* filter: grayscale(100%); */
+
+}
+/* .span1{
+    margin-left: 100px;
+    color: #000000;
+} */
+#img2{
+   width: 25%; 
+}
+#img3{
+   width: 15%; 
+}
+#img4{
+   width: 15%; 
+}
+#img5{
+   width: 15%; 
+}
+#img6{
+   width: 15%; 
+}
+/* .training-content img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} */
+
+/* BMI Calculator */
+
+.bmi-content{
+    background: #2c2c2c;
+}
+.bmi-container{
+    display: flex;
+    margin: 40px;
+}
+.bmi-part1{
+    width: 50%;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.bmi-part1 h4{
+    color: #fff;
+}
+.bmi-part1 table,td{
+    border: 1px solid #616161;
+    border-collapse: collapse;
+    padding: 10px 17px;
+    color: #616161;
+    /* color: #fff; */
+}
+.bmi-text{
+    color: #fff;
+}
+.bmitext{
+    color: #fff;
+}
+.bmi-part2{
+    width: 50%;
+}
+/* Meet Our Team */
+.meet-team{
+    margin: 0 auto;
+    text-align: center;
+}
+.meet-main-container{
+    margin: 0 auto;
+    background-color: #2c2c2c;
+    border-radius: 20px;
+    margin: 100px;
+    /* color: #616161; */
+}
+.meet-images-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 5px; */
+    padding: 30px;
+    align-items: center;
+}
+.meet-images-content img{
+    max-width: 100%;
+    height: auto;
+    /* width: 90%; */
+    /* height: 90%; */
+        /* width: 300px;
+    height: 250px; */
+}
+
+/* Footer */
+footer{
+    background-color: #2c2c2c;
+}
+.container-footer{
+    display: flex ;
+    margin: 0 auto;
+}
+.fitness-footer{
+    margin: 0 auto;
+}
+
+.get-started-container{
+    display: flex;
+    margin: 0 auto;
+}
