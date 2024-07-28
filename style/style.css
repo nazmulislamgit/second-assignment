@@ -1,3 +1,13 @@
+*{
+    /* border: 1px solid slateblue;
+    margin: 0;
+    padding: 0; */
+}
+body{
+    border: 2px dashed green;
+    margin: 0;
+    padding: 0;
+}
 /* Google Font style */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
@@ -77,6 +87,16 @@ nav ul li a{
     display: flex;
     /* justify-content: space-between; */
 
+}
+/* Toggle Bar */
+.checkbtn{
+    font-size: 30px;
+    color: #ffffff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 .rightside-container{
     width: 50%;
@@ -188,7 +208,8 @@ nav ul li a{
     color: rgba(255, 255, 255, 0.65);
 }
 #title-second{
-    padding: 10px 15px;
+    position: absolute;
+    padding: 5px 5px;
     background: rgb(34,34,34); 
     background: rgba(34,34,34,0.75);
     border-radius: 12px;
@@ -202,17 +223,25 @@ nav ul li a{
     font-size: 13px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.65);
-    text-align: left;
+    /* text-align: left; */
+    margin-left: 40px;
+    margin-bottom: -10px;
 }
 .fa-circle-play{
-    /* position: absolute; */
-    width: 40px;
-    height: 40px;
-    left: 787px;
-    top: 584px;
-    /* width: 100%; */
+    font-size: 30px;
+    margin-left: -5px;
+    margin-top: 10px;
 }
 /* Main Section Style Here */
+main {
+    background: black;
+    margin: 0;
+    margin-top: -48px;
+    /* padding: 0; */
+}
+.mainseaction{
+}
+/* Chang Your Habit */
 .main-section{
     max-width: 1440px;
     margin: 0 auto;
@@ -221,6 +250,25 @@ nav ul li a{
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
+}
+.main-contant > h3{
+    font-family: Inter;
+font-size: 48px;
+font-weight: 900;
+    color: #ffffff;
+    padding-top: 100px;
+}
+.main-contant p{
+    font-family: "Inter";
+    color: #5c5c5c;
+    margin-top: -30px;
+}
+.skills h4{
+    font-size: ;
+    color: #ffffff;
+}
+.skills p{
+    margin-top: -6px;
 }
 .skills img{
     border-radius: 200px;
@@ -231,6 +279,7 @@ nav ul li a{
     /* margin: 70px; */
     margin: 0 auto;
     gap: 15px;
+    margin-top: 50px;
 }
 .skills{
     padding: 15px;
@@ -243,13 +292,14 @@ nav ul li a{
 .run-senction{
     margin: 0 auto;
     display: flex;
+    margin-top: 100px;
 }
 .run-container{
     /* margin: 70px; */
     margin: 0 auto;
     padding: 15px;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     background: #2c2c2c;
     border-radius: 20px;
 }
@@ -263,7 +313,11 @@ nav ul li a{
 .run-image img{
     border-radius: 30px;
     width: 80%;
+    height: 312px;
+    object-fit: none;
+    object-position: 66% 30%;
     margin-left: 100px;
+
 }
 .run-content h3{
     font-family: Inter;
@@ -282,25 +336,43 @@ nav ul li a{
 .training-section{
     margin: 0 auto;
 }
+.training-titlediv{
+    text-align: left;
+    margin-left: 180px;
+}
+.training-titlediv h3{
+    font-family: Inter;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    margin-top: 100px;
+}
+.training-titlediv p{
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: -25px;
+}
 .training-img{
-    display: flex;
+    margin: 0 auto;
     margin: 50px;
+    margin-left: 200px;
+}
+.training-img > div{
+    display: flex;
 }
 .training-img img{
     /* height: calc( (100% - 5px)/2 ); */
 }
 .trainig-content{
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
-    position: relative;
+    /* position: relative; */
     /* overflow: hidden; */
+    display: flex;
+    margin: 0 auto;  
 }
-.exercise-first{
-    position: absolute;
-    width: 323px;
-    height: 218px;
-    left: -16px;
-    top: 0;
+.trainig-content > div {
+    display: flex;  
 }
 .trainier-name-he{
     position: absolute;
@@ -310,7 +382,7 @@ nav ul li a{
     color: aqua;
   }
 #img1{
-   /* width: 15%;  */
+   width: 15%; 
    /* height: 7%; */
    /* filter: grayscale(100%); */
 
@@ -334,13 +406,28 @@ nav ul li a{
 #img6{
    width: 15%; 
 }
-/* .training-content img{
+.training-content img{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-} */
+    grid-template-columns: repeat(3, 1frt);
+}
 
 /* BMI Calculator */
-
+.bmi-calculator h3{
+    font-family: Inter;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    margin-top: 60px;
+    margin-left: 380px;
+}
+.bmi-calculator-description{
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: -20px;
+    margin-left: 380px;
+}
 .bmi-content{
     background: #2c2c2c;
 }
@@ -349,13 +436,20 @@ nav ul li a{
     margin: 40px;
 }
 .bmi-part1{
-    width: 50%;
+    width: 40%;
     align-content: center;
     align-items: center;
     justify-items: center;
+    margin-left: 170px;
 }
-.bmi-part1 h4{
+.bmi-part1 h2{
+    font-family: Inter;
+    font-size: 1.20rem;
+    font-weight: 900;
     color: #fff;
+}
+.bmi-part1 table{
+   margin-top: 40px;
 }
 .bmi-part1 table,td{
     border: 1px solid #616161;
@@ -371,39 +465,187 @@ nav ul li a{
     color: #fff;
 }
 .bmi-part2{
-    width: 50%;
+    width: 60%;
+    margin-bottom: 50px;
+}
+.bmi-part2 h4{
+    font-family: Inter;
+    font-size: 1.20rem;
+    font-weight: 900;
+    color: #fff;
+}
+.bmi-part2 p{
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.height-cm{
+    width: 282px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding-left: 20px;
+}
+.weight-kg{
+    width: 282px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding-left: 20px;
+    margin: 0px 10px;
+}
+.age{
+    width: 282px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.sex{
+    width: 290px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding-left: 20px;
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+select option[value="sex"] {
+    display: none;
+}
+#sex-opt{
+    
+    color: #868686;
+}
+::selection {
+    color: red;
+    background: yellow;
+  }
+.activity-factor{
+    width: 595px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.calculate-button{
+    color: #fff;
+    font-size: 18px;
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    margin-top: 30px;
+    border: none;
+
 }
 /* Meet Our Team */
 .meet-team{
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 20px;
 }
 .meet-main-container{
     margin: 0 auto;
     background-color: #2c2c2c;
     border-radius: 20px;
-    margin: 100px;
+    margin: 150px;
     /* color: #616161; */
 }
 .meet-images-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* gap: 5px; */
+    gap: 20px;
     padding: 30px;
     align-items: center;
+    justify-content: center;
 }
 .meet-images-content img{
     max-width: 100%;
-    height: auto;
     /* width: 90%; */
     /* height: 90%; */
         /* width: 300px;
     height: 250px; */
 }
+.meet-trainer-name{
+    color: #ffffff;
+    position: absolute;
+    margin-bottom: 110px;
+    margin-left: 10px;
+}
+.meet-trainer-name-came{
+    color: #ffffff;
+    position: absolute;
+    margin-bottom: 110px;
+    margin-left: 370px;
+}
+.meet-trainer-title{
+    color: #868686;
+    position: absolute;
+    margin-bottom: 60px;
+    margin-left: 10px;
+}
+.meet-trainer-title1{
+    color: #868686;
+    position: absolute;
+    margin-bottom: 60px;
+    margin-left: 370px;
+}
+.trainer1{
+    height: 280px;
+    object-fit: fill;
+    border-radius: 20px;
+    /* object-position: 50% center 50 ; */
+    /* object-position: 10% 10%; */
+}
+.trainer2{
+    height: 280px;
+    object-fit: fill;
+    border-radius: 20px;
+    /* object-position: 50% center 50 ; */
+    /* object-position: 10% 10%; */
+}
+.trainer3{
+    height: 280px;
+    object-fit: fill;
+    border-radius: 20px;
+    /* object-position: 50% center 50 ; */
+    /* object-position: 10% 10%; */
+}
+.trainer4{
+    height: 280px;
+    object-fit: fill;
+    border-radius: 20px;
+    /* object-position: 50% center 50 ; */
+    /* object-position: 10% 10%; */
+}
+.trainer5{
+    height: 280px;
+    object-fit: fill;
+    border-radius: 20px;
+    /* object-position: 50% center 50 ; */
+    /* object-position: 10% 10%; */
+}
+.trainer6{
+    height: 280px;
+    object-fit: fill;
+    border-radius: 20px;
+    /* object-position: 50% center 50 ; */
+    /* object-position: 10% 10%; */
+}
 
 /* Footer */
 footer{
     background-color: #2c2c2c;
+    margin-top: -100px;
 }
 .container-footer{
     display: flex ;
@@ -412,8 +654,46 @@ footer{
 .fitness-footer{
     margin: 0 auto;
 }
+.fitness-footer h3{
+    font-family: Inter;
+font-size: 70px;
+font-weight: 800;
+color: rgb(230, 83, 60);
+margin-top: 60px;
+}
+.fitness-footer p{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -50px;
+    line-height: 1.2rem;
+    color: #868686;
+}
 
 .get-started-container{
     display: flex;
     margin: 0 auto;
+}
+
+
+
+
+
+/* Responsive Area */
+@media (max-width: 952px){
+
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul li a{
+        display: block;
+    }
+    nav ul li a{
+        display: none;
+    }
+    .navbar-ul{
+        border: none;
+    }
 }

@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <header id="header-section">
             <nav>
+                
                 <h3 class="nav-title"><i>Fitness</i></h3>
                 <ul class="navbar-ul">
                     <li><a href="" class="list-menu-home">Home</a></li>
@@ -17,6 +19,9 @@
                     <li><a href="">Contact</a></li>
                     <li><a href="">About</a></li>
                 </ul>
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
             </nav>
             <section id="" class="header-container">
                 <div class="rightside-container">
@@ -47,7 +52,7 @@
         </section>
     </header>
     <main class="">
-        <section>
+        <section class="mainseaction">
             <div class="main-section">
             <div class="main-contant">
                 <h3>Change Your Habits</h3>
@@ -90,53 +95,46 @@
                             <button class="btn-p">Join Now</button>
                     </div>
                     <div class="run-image">
-                        <img src="images/run1.jpg" alt="">
+                        <img src="images/run.jpg" alt="">
                     </div>
                 </div>
             </div>
             <!-- Trainings and Exercises -->
              <section class="training-section">
              <div >
-                <div>
+                <div class="training-titlediv">
                     <h3>Trainings and Exercises</h3>
-                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or
+                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>
                         access to a gym.</p>
                 </div>
                 <div class="training-img">
+                    <div>
+                        <img id="img1" src="images/exercise1.jpg" alt="">
+                    <img id="img2" src="images/exercise2.png" alt="">
+                    <img id="img3" src="images/exercise3.png" alt="">
+                    </div>
                 <div class="trainig-content">
                         <!-- <span class="span1">Lorem Ispem</span> -->
-                         <div class="exercise-first">
-                            <img id="img1" src="images/exercise1.jpg" alt="">
-                            <div class="trainier-name-he">Name</div>
-                         </div>
-                    <div>
-                        <img id="img2" src="images/exercise2.png" alt="">
-                    </div>
-                    <div>
-                        <img id="img3" src="images/exercise3.png" alt="">
-                    </div>
                     <div>
                         <img id="img4" src="images/exercise4.png" alt=""> 
-                    </div>
-                    <div>
                         <img id="img5" src="images/exercise5.jpg" alt="">
-                    </div>
-                    <div>
                         <img id="img6" src="images/exercise6.jpg" alt="">
                     </div>
+                            </div>
                         </div>
                 </div>
+                </section>
              </div>
             </section>
             </div>
-            <div>
+            <div class="bmi-calculator">
                 <h3>BMI Calculator</h3>
-                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>
+                <p class="bmi-calculator-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>
                     access to a gym.</p>
             <div class="bmi-content">
                 <div class="bmi-container">
                     <div class="bmi-part1">
-                        <h4>BMI Calculator Chart</h4>
+                        <h2>BMI Calculator Chart</h2>
                         <table>
                             <tr>
                                 <td class="bmi-text"><b>BMI</b></td>
@@ -165,20 +163,20 @@
                         <h4>Calculate your BMI</h4>
                         <p>We believe fitness should be accessible to everyone, everywhere, regardless of <br>
                             income or access to a gym.</p>
-                        <input type="text" placeholder="Height/cm">
-                        <input type="text" placeholder="Weight/kg"> <br>
-                        <input type="text" placeholder="Age">
-                        <select name="" id=""> 
-                            <option>Sex &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        <input class="height-cm" type="text" placeholder="Height/cm" >
+                        <input class="weight-kg" size="30" type="text" placeholder="Weight/kg"> <br>
+                        <input class="age" type="text" placeholder="Age">
+                        <select class="sex" name="" id=""> 
+                            <option id="sex-opt" value="sex">Sex</option>
                             <option value="1">Male</option>  
                             <option value="2">Female</option>  
                         </select> <br>
-                        <select name="" id=""> 
-                            <option>Select an activity factor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        <select class="activity-factor" name="" id=""> 
+                            <option>Select an activity factor</option>
                             <option value="1">New</option>  
                             <option value="2">Old</option>  
                         </select> <br>
-                        <button type="button">Calculate</button>
+                        <button class="calculate-button" type="button">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -190,12 +188,16 @@
                     access to a gym.</p>
                 <div class="meet-main-container">
                     <div class="meet-images-content">
-                        <img src="images/trainer1.png" alt="">
-                        <img src="images/trainer2.png" alt="">
-                        <img src="images/trainer3.png" alt="">
-                        <img src="images/trainer4.png" alt="">
-                        <img src="images/trainer5.png" alt="">
-                        <img src="images/trainer6.png" alt="">
+                        <img class="trainer1" src="images/trainer1.png" alt="">
+                        <span class="meet-trainer-name"><b>Jerome Bell</b></span>
+                        <span class="meet-trainer-title">Trainer</span>
+                        <img class="trainer2" src="images/trainer2.png" alt="">
+                        <span class="meet-trainer-name-came"><b>Cameron Williamson</b></span>
+                        <span class="meet-trainer-title1">Trainer</span>
+                        <img class="trainer3" src="images/trainer3.png" alt="">
+                        <img class="trainer4" src="images/trainer4.png" alt="">
+                        <img class="trainer5" src="images/trainer5.png" alt="">
+                        <img class="trainer6" src="images/trainer6.png" alt="">
                     </div>
                 </div>
             </section>
